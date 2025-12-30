@@ -164,6 +164,18 @@ const commands = [
                 required:true
             }
         ]
+    },
+    {
+        name: 'short_url',
+        description: 'Reduce el tamaño de una URL!',
+        options:[
+            {
+                type:3,
+                name:'url',
+                description:'URL',
+                required:true
+            }
+        ]
     }
 ];
 
