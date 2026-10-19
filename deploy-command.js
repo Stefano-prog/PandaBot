@@ -176,6 +176,20 @@ const commands = [
                 required:true
             }
         ]
+    },
+    {
+        name: 'resumen',
+        description: 'Resume los ultimos mensajes!',
+        options:[
+            {
+                type:4, // INTEGER
+                name:'cantidad',
+                description:'Cantidad de mensajes a resumir',
+                required:true,
+                min_value:5,
+                max_value:50
+            }
+        ]
     }
 ];
 

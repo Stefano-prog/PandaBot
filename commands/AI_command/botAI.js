@@ -14,7 +14,7 @@ module.exports = {
     async execute(interaction){
         const AI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
         const model = AI.getGenerativeModel({ 
-            model: "gemini-2.5-flash", // Más rápido y económico
+            model: "gemini-3.5-flash-lite", // Más rápido y económico
             generationConfig: {
                 temperature: 0.7
             }
@@ -37,7 +37,7 @@ module.exports = {
                 await interaction.reply(text);
             }else if (interaction.deferred){
                 await interaction.editReply(text);
-}
+            }
         }
         catch (error) {
             console.error('Error al obtener la respuesta:', error);

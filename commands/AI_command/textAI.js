@@ -17,7 +17,7 @@ module.exports = {
     async execute(interaction){
         //Llamamos a la API Key y definimos el modelo de IA
         const AI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-        const model = AI.getGenerativeModel({model:"gemini-2.5-flash"});
+        const model = AI.getGenerativeModel({model:"gemini-3.5-flash-lite"});
 
         try{
             //Esperamos la imagen del usuario
